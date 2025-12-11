@@ -612,6 +612,26 @@
       <to>Add constants 5</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Select values 8</from>
+      <to>Add constants 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 10</from>
+      <to>Add constants 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 11</from>
+      <to>Add constants 10</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 12</from>
+      <to>Add constants 6</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
     <name>Add constants</name>
@@ -727,6 +747,30 @@
       <schema_name/>
     </partitioning>
     <fields>
+      <field>
+        <name>status_emprego</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>modalidade_trabalho</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -754,6 +798,30 @@
       <schema_name/>
     </partitioning>
     <fields>
+      <field>
+        <name>status_emprego</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>satisfacao_trabalho</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -766,6 +834,45 @@
     <GUI>
       <xloc>384</xloc>
       <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants 5</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>modalidade_trabalho</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -923,23 +1030,6 @@
     <fields>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>How would you best describe the industry you work in?</name>
-        <rename>setor_bruto</rename>
-        <type>None</type>
-        <length>23</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
         <name>Which best describes the size of your company?</name>
         <rename>tamanho_bruto</rename>
         <type>None</type>
@@ -1053,9 +1143,6 @@
         <rename>status_bruto</rename>
       </field>
       <field>
-        <name>DevType</name>
-      </field>
-      <field>
         <name>OrgSize</name>
         <rename>tamanho_bruto</rename>
       </field>
@@ -1098,9 +1185,6 @@
       <field>
         <name>RemoteWork</name>
         <rename>modalidade_bruto</rename>
-      </field>
-      <field>
-        <name>DevType</name>
       </field>
       <field>
         <name>OrgSize</name>
@@ -1147,9 +1231,6 @@
         <rename>malidade_bruto</rename>
       </field>
       <field>
-        <name>DevType</name>
-      </field>
-      <field>
         <name>OrgSize</name>
         <rename>tamanho_bruto</rename>
       </field>
@@ -1194,14 +1275,12 @@
         <rename>modalidade_bruto</rename>
       </field>
       <field>
-        <name>DevType</name>
-      </field>
-      <field>
         <name>OrgSize</name>
         <rename>tamanho_bruto</rename>
       </field>
       <field>
         <name>Industry</name>
+        <rename/>
       </field>
       <field>
         <name>JobSat</name>
@@ -1244,9 +1323,6 @@
         <rename>status_bruto</rename>
       </field>
       <field>
-        <name>DevType</name>
-      </field>
-      <field>
         <name>OrgSize</name>
         <rename>tamanho_bruto</rename>
       </field>
@@ -1256,6 +1332,7 @@
       </field>
       <field>
         <name>Industry</name>
+        <rename/>
       </field>
       <field>
         <name>JobSat</name>
@@ -1296,10 +1373,6 @@
       <field>
         <name>Which best describes the size of your company?</name>
         <rename>tamanho_bruto</rename>
-      </field>
-      <field>
-        <name>Which of the following best describes your occupation?</name>
-        <rename>setor</rename>
       </field>
       <field>
         <name>What type of project are you developing?</name>
@@ -1346,14 +1419,10 @@
         <rename>tamanho_bruto</rename>
       </field>
       <field>
-        <name>Which of the following best describes your occupation?</name>
-        <rename>setor_bruto</rename>
-      </field>
-      <field>
         <name>What best describes your career / job satisfaction?</name>
         <rename>satisfacao_bruto</rename>
       </field>
-      <select_unspecified>N</select_unspecified>
+      <select_unspecified>Y</select_unspecified>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1384,10 +1453,6 @@
       <field>
         <name>Which of the following best describes your occupation?</name>
         <rename>ocupacao</rename>
-      </field>
-      <field>
-        <name>How would you best describe the industry you currently work in?</name>
-        <rename>setor_bruto</rename>
       </field>
       <field>
         <name>How many developers are employed at your company?</name>
@@ -1430,15 +1495,12 @@
         <rename>id</rename>
       </field>
       <field>
-        <name>Occupation</name>
-        <rename>setor_bruto</rename>
-      </field>
-      <field>
         <name>Employment Status</name>
         <rename>status_bruto</rename>
       </field>
       <field>
         <name>Industry</name>
+        <rename/>
       </field>
       <field>
         <name>Job Satisfaction</name>
@@ -1477,15 +1539,12 @@
         <rename>id</rename>
       </field>
       <field>
-        <name>occupation</name>
-        <rename>setor_bruto</rename>
-      </field>
-      <field>
         <name>employment_status</name>
         <rename>status_bruto</rename>
       </field>
       <field>
         <name>industry</name>
+        <rename/>
       </field>
       <field>
         <name>company_size_range</name>
@@ -1544,9 +1603,6 @@
         <rename>tamanho_bruto</rename>
       </field>
       <field>
-        <name>DeveloperType</name>
-      </field>
-      <field>
         <name>JobSatisfaction</name>
         <rename>satisfacao_bruto</rename>
       </field>
@@ -1591,14 +1647,8 @@
         <rename>tamanho_bruto</rename>
       </field>
       <field>
-        <name>DevType</name>
-      </field>
-      <field>
         <name>JobSatisfaction</name>
         <rename>satisfacao_bruto</rename>
-      </field>
-      <field>
-        <name>JobSearchStatus</name>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -16822,7 +16872,7 @@
     </GUI>
   </step>
   <step>
-    <name>Add constants 5</name>
+    <name>Add constants 7</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -16856,7 +16906,136 @@
     </remotesteps>
     <GUI>
       <xloc>384</xloc>
-      <yloc>432</yloc>
+      <yloc>720</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants 9</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>modalidade_trabalho</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants 10</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>modalidade_trabalho</name>
+        <type/>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>satisfacao_trabalho</name>
+        <type/>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>1008</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants 6</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>satisfacao_trabalho</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>1104</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
