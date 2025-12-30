@@ -1,0 +1,4664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>fato_RespostasDev-2016</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2025/12/08 18:04:09.468</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2025/12/08 18:04:09.468</modified_date>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>banco</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>sad_project</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb31b963d187bcdb</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>input_15</from>
+      <to>Select values 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 5</from>
+      <to>Filter rows 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add constants 5</from>
+      <to>If field value is null 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_salario 5</from>
+      <to>mapper_anos_profissional 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 25</from>
+      <to>lookup_pais 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_pais 5</from>
+      <to>lookup_perfil 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_tipodesenvolvedor 5</from>
+      <to>lookup_tempo 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows 5</from>
+      <to>Add constants 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_ambiente 5</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_tempo 5</from>
+      <to>lookup_ambiente 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_perfil 5</from>
+      <to>lookup_tipodesenvolvedor 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Write to log</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>faixa_etaria 4</from>
+      <to>genero 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>genero 4</from>
+      <to>mapper_salario 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_pais 4</from>
+      <to>Select values 25</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_anos_profissional 5</from>
+      <to>mapper_tipodev</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_tipodev</from>
+      <to>mapper_pais 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_pais 4</from>
+      <to>Filter rows</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows 3</from>
+      <to>Write to log 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_perfil 5</from>
+      <to>Filter rows 3</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>ambiente</from>
+      <to>Write to log 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>lookup_ambiente 5</from>
+      <to>ambiente</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>mapper_modalidade 6</from>
+      <to>mapper_satisfacao 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_status 6</from>
+      <to>mapper_tamanho 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_tamanho 6</from>
+      <to>mapper_modalidade 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>If field value is null 5</from>
+      <to>mapper_status 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mapper_satisfacao 6</from>
+      <to>faixa_etaria 4</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Add constants 5</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>descricao</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>Não Coletado</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>ano</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>2016</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Write to log</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>pais</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>688</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows 3</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Write to log 3</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>fk_perfil</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1008</xloc>
+      <yloc>896</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows 5</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to/>
+    <send_false_to>Add constants 5</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>pais_bruto</leftvalue>
+        <function>=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Response</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask/>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null 5</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <replaceAllByValue/>
+    <replaceAllMask/>
+    <selectFields>Y</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>tipo_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>status_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>faixa_etaria_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>genero_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>anos_experiencia_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>pais_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>salario_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>satisfacao_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>tamanho_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>modalidade_bruto</name>
+        <value>Não Coletado</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 25</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>status_emprego</name>
+      </field>
+      <field>
+        <name>modalidade_trabalho</name>
+      </field>
+      <field>
+        <name>genero</name>
+      </field>
+      <field>
+        <name>descricao</name>
+      </field>
+      <field>
+        <name>tamanho_empresa</name>
+      </field>
+      <field>
+        <name>satisfacao_trabalho</name>
+      </field>
+      <field>
+        <name>faixa_etaria</name>
+      </field>
+      <field>
+        <name>pais</name>
+      </field>
+      <field>
+        <name>salario_anual</name>
+      </field>
+      <field>
+        <name>anos_experiencia_profissional</name>
+      </field>
+      <field>
+        <name>id_respondente</name>
+      </field>
+      <field>
+        <name>descricao_tipodev</name>
+      </field>
+      <field>
+        <name>ano</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>occupation</name>
+        <rename>tipo_bruto</rename>
+      </field>
+      <field>
+        <name>respondent</name>
+        <rename>id_respondente</rename>
+      </field>
+      <field>
+        <name>country</name>
+        <rename>pais_bruto</rename>
+      </field>
+      <field>
+        <name>age_range</name>
+        <rename>faixa_etaria_bruto</rename>
+      </field>
+      <field>
+        <name>gender</name>
+        <rename>genero_bruto</rename>
+      </field>
+      <field>
+        <name>experience_range</name>
+        <rename>anos_experiencia_bruto</rename>
+      </field>
+      <field>
+        <name>salary_range</name>
+        <rename>salario_bruto</rename>
+      </field>
+      <field>
+        <name>employment_status</name>
+        <rename>status_bruto</rename>
+      </field>
+      <field>
+        <name>job_satisfaction</name>
+        <rename>satisfacao_bruto</rename>
+      </field>
+      <field>
+        <name>company_size_range</name>
+        <rename>tamanho_bruto</rename>
+      </field>
+      <field>
+        <name>remote</name>
+        <rename>modalidade_bruto</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <schema>public</schema>
+    <table>fato_respostasdev</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>fk_geografia</column_name>
+        <stream_name>fk_geografia</stream_name>
+      </field>
+      <field>
+        <column_name>fk_perfil</column_name>
+        <stream_name>fk_perfil</stream_name>
+      </field>
+      <field>
+        <column_name>fk_ambientetrabalho</column_name>
+        <stream_name>sk_ambientetrabalho</stream_name>
+      </field>
+      <field>
+        <column_name>fk_tempo</column_name>
+        <stream_name>fk_tempo</stream_name>
+      </field>
+      <field>
+        <column_name>fk_tipodev</column_name>
+        <stream_name>fk_tipodev</stream_name>
+      </field>
+      <field>
+        <column_name>id_respondente_origem</column_name>
+        <stream_name>id_respondente</stream_name>
+      </field>
+      <field>
+        <column_name>salario_anual_usd</column_name>
+        <stream_name>salario_anual</stream_name>
+      </field>
+      <field>
+        <column_name>anos_experiencia_profissional</column_name>
+        <stream_name>anos_experiencia_profissional</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>1040</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Write to log</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>pais_bruto</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1264</xloc>
+      <yloc>752</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Write to log 3</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>descricao</name>
+      </field>
+      <field>
+        <name>faixa_etaria</name>
+      </field>
+      <field>
+        <name>genero</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>944</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>faixa_etaria 4</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>faixa_etaria_bruto</field_to_use>
+    <target_field>faixa_etaria</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>&lt; 20</source_value>
+        <target_value>18-24 anos</target_value>
+      </field>
+      <field>
+        <source_value>20-24</source_value>
+        <target_value>18-24 anos</target_value>
+      </field>
+      <field>
+        <source_value>25-29</source_value>
+        <target_value>25-34 anos</target_value>
+      </field>
+      <field>
+        <source_value>30-34</source_value>
+        <target_value>25-34 anos</target_value>
+      </field>
+      <field>
+        <source_value>35-39</source_value>
+        <target_value>35-44 anos</target_value>
+      </field>
+      <field>
+        <source_value>44-49</source_value>
+        <target_value>44-49 anos</target_value>
+      </field>
+      <field>
+        <source_value>50-59</source_value>
+        <target_value>50-59 anos</target_value>
+      </field>
+      <field>
+        <source_value>&gt;60</source_value>
+        <target_value>Acima de 65 anos</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>&gt; 60</source_value>
+        <target_value>Acima de 65 anos</target_value>
+      </field>
+      <field>
+        <source_value>Prefer not to disclose</source_value>
+        <target_value>Prefiro não dizer</target_value>
+      </field>
+      <field>
+        <source_value>60</source_value>
+        <target_value>60 anos</target_value>
+      </field>
+      <field>
+        <source_value>40-49</source_value>
+        <target_value>44-49 anos</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1424</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>genero 4</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>genero_bruto</field_to_use>
+    <target_field>genero</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Female</source_value>
+        <target_value>Mulher</target_value>
+      </field>
+      <field>
+        <source_value>Male</source_value>
+        <target_value>Homem</target_value>
+      </field>
+      <field>
+        <source_value>Prefer not to disclose</source_value>
+        <target_value>Prefiro não dizer</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other</source_value>
+        <target_value>Prefiro não dizer</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1584</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>input_15</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>C:\Panorama-do-Desenvolvedor-de-Software-Global\data\2016\survey_results_public.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <format>mixed</format>
+    <encoding/>
+    <fields>
+      <field>
+        <name>respondent</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>collector</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>8</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>country</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>un_subregion</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>so_region</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>14</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>age_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>gender</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>self_identification</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>147</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>occupation</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>occupation_group</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>100</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>experience_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>16</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>salary_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>18</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>tech_do</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>379</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>tech_want</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>166</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>aliens</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>employment_status</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>industry</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>23</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>company_size_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>team_size_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>18</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>women_on_team</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>remote</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>job_satisfaction</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>job_discovery</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>67</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>dev_environment</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>73</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>commit_frequency</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>88</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>hobby</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>dogs_vs_cats</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>desktop_os</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>unit_testing</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>rep_range</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>23</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>visit_frequency</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>64</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>why_learn_new_tech</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>46</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>education</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>243</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>open_to_new_job</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>60</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>new_job_value</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>311</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>job_search_annoyance</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>42</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>interview_likelihood</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>how_to_improve_interview_process</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>198</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>star_wars_vs_star_trek</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_tech</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_notice</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_problemsolving</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>16</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_diversity</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_adblocker</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_alcohol</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_loveboss</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_nightcode</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_legacy</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>agree_mars</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>19</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_variety</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_control</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_sameend</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_newtech</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_buildnew</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_buildexisting</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_promotion</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_companymission</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_wfh</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>important_ownoffice</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>developer_challenges</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>298</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>why_stack_overflow</name>
+        <type>String</type>
+        <format/>
+        <currency>R$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>222</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>lookup_ambiente 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>dim_ambientetrabalho</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>status_emprego</name>
+        <field>status_emprego</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>tamanho_empresa</name>
+        <field>tamanho_empresa</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>modalidade_trabalho</name>
+        <field>modalidade_trabalho</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>satisfacao_trabalho</name>
+        <field>satisfacao_trabalho</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>pk_ambientetrabalho</name>
+        <rename>sk_ambientetrabalho</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>lookup_pais 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>dim_geografia</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>pais</name>
+        <field>pais</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>pk_geografia</name>
+        <rename>fk_geografia</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>lookup_perfil 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>dim_perfil</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>descricao</name>
+        <field>descricao</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>faixa_etaria</name>
+        <field>faixa_etaria</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>genero</name>
+        <field>genero</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>pk_perfil</name>
+        <rename>fk_perfil</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1008</xloc>
+      <yloc>720</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>lookup_tempo 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>dim_tempo</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>ano</name>
+        <field>ano</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>pk_tempo</name>
+        <rename>fk_tempo</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>816</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>lookup_tipodesenvolvedor 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>banco</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>dim_tipodesenvolvedor</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>descricao_tipodev</name>
+        <field>descricao_tipodev</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>pk_tipodev</name>
+        <rename>fk_tipodev</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>720</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_anos_profissional 5</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>anos_experiencia_bruto</field_to_use>
+    <target_field>anos_experiencia_profissional</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1 - 2 years</source_value>
+        <target_value>Entre 1 - 2 anos</target_value>
+      </field>
+      <field>
+        <source_value>11+ years</source_value>
+        <target_value>Mais de 10 anos</target_value>
+      </field>
+      <field>
+        <source_value>2 - 5 years</source_value>
+        <target_value>Entre 2 - 5 anos</target_value>
+      </field>
+      <field>
+        <source_value>6 - 10 years</source_value>
+        <target_value>Entre 6 - 10 anos</target_value>
+      </field>
+      <field>
+        <source_value>Não Informado</source_value>
+        <target_value>Não Informado</target_value>
+      </field>
+      <field>
+        <source_value>Less than 1 year</source_value>
+        <target_value>Menos de um ano</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1424</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_pais 4</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>pais_bruto</field_to_use>
+    <target_field>pais</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Afghanistan</source_value>
+        <target_value>Afghanistan</target_value>
+      </field>
+      <field>
+        <source_value>Africa</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Albania</source_value>
+        <target_value>Albania</target_value>
+      </field>
+      <field>
+        <source_value>Algeria</source_value>
+        <target_value>Algeria</target_value>
+      </field>
+      <field>
+        <source_value>American Samoa</source_value>
+        <target_value>American Samoa</target_value>
+      </field>
+      <field>
+        <source_value>Andorra</source_value>
+        <target_value>Andorra</target_value>
+      </field>
+      <field>
+        <source_value>Angola</source_value>
+        <target_value>Angola</target_value>
+      </field>
+      <field>
+        <source_value>Anguilla</source_value>
+        <target_value>Anguilla</target_value>
+      </field>
+      <field>
+        <source_value>Antarctica</source_value>
+        <target_value>Antarctica</target_value>
+      </field>
+      <field>
+        <source_value>Antigua &amp; Deps</source_value>
+        <target_value>Antigua and Barbuda</target_value>
+      </field>
+      <field>
+        <source_value>Antigua and Barbuda</source_value>
+        <target_value>Antigua and Barbuda</target_value>
+      </field>
+      <field>
+        <source_value>Argentina</source_value>
+        <target_value>Argentina</target_value>
+      </field>
+      <field>
+        <source_value>Armenia</source_value>
+        <target_value>Armenia</target_value>
+      </field>
+      <field>
+        <source_value>Aruba</source_value>
+        <target_value>Aruba</target_value>
+      </field>
+      <field>
+        <source_value>Australasia</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Australia</source_value>
+        <target_value>Australia</target_value>
+      </field>
+      <field>
+        <source_value>Austria</source_value>
+        <target_value>Austria</target_value>
+      </field>
+      <field>
+        <source_value>Azerbaijan</source_value>
+        <target_value>Azerbaijan</target_value>
+      </field>
+      <field>
+        <source_value>Bahamas</source_value>
+        <target_value>Bahamas (the)</target_value>
+      </field>
+      <field>
+        <source_value>Bahrain</source_value>
+        <target_value>Bahrain</target_value>
+      </field>
+      <field>
+        <source_value>Bangladesh</source_value>
+        <target_value>Bangladesh</target_value>
+      </field>
+      <field>
+        <source_value>Barbados</source_value>
+        <target_value>Barbados</target_value>
+      </field>
+      <field>
+        <source_value>Belarus</source_value>
+        <target_value>Belarus</target_value>
+      </field>
+      <field>
+        <source_value>Belgium</source_value>
+        <target_value>Belgium</target_value>
+      </field>
+      <field>
+        <source_value>Belize</source_value>
+        <target_value>Belize</target_value>
+      </field>
+      <field>
+        <source_value>Benin</source_value>
+        <target_value>Benin</target_value>
+      </field>
+      <field>
+        <source_value>Bermuda</source_value>
+        <target_value>Bermuda</target_value>
+      </field>
+      <field>
+        <source_value>Bhutan</source_value>
+        <target_value>Bhutan</target_value>
+      </field>
+      <field>
+        <source_value>Bolivia</source_value>
+        <target_value>Bolivia, Plurinational State of</target_value>
+      </field>
+      <field>
+        <source_value>Bonaire, Sint Eustatius and Saba</source_value>
+        <target_value>Bonaire, Sint Eustatius and Saba</target_value>
+      </field>
+      <field>
+        <source_value>Bosnia Herzegovina</source_value>
+        <target_value>Bosnia and Herzegovina</target_value>
+      </field>
+      <field>
+        <source_value>Bosnia and Herzegovina</source_value>
+        <target_value>Bosnia and Herzegovina</target_value>
+      </field>
+      <field>
+        <source_value>Botswana</source_value>
+        <target_value>Botswana</target_value>
+      </field>
+      <field>
+        <source_value>Bouvet Island</source_value>
+        <target_value>Bouvet Island</target_value>
+      </field>
+      <field>
+        <source_value>Brazil</source_value>
+        <target_value>Brazil</target_value>
+      </field>
+      <field>
+        <source_value>British Indian Ocean Territory (the)</source_value>
+        <target_value>British Indian Ocean Territory (the)</target_value>
+      </field>
+      <field>
+        <source_value>Brunei</source_value>
+        <target_value>Brunei Darussalam</target_value>
+      </field>
+      <field>
+        <source_value>Brunei Darussalam</source_value>
+        <target_value>Brunei Darussalam</target_value>
+      </field>
+      <field>
+        <source_value>Bulgaria</source_value>
+        <target_value>Bulgaria</target_value>
+      </field>
+      <field>
+        <source_value>Burkina</source_value>
+        <target_value>Burkina Faso</target_value>
+      </field>
+      <field>
+        <source_value>Burkina Faso</source_value>
+        <target_value>Burkina Faso</target_value>
+      </field>
+      <field>
+        <source_value>Burma</source_value>
+        <target_value>Myanmar</target_value>
+      </field>
+      <field>
+        <source_value>Burundi</source_value>
+        <target_value>Burundi</target_value>
+      </field>
+      <field>
+        <source_value>Cambodia</source_value>
+        <target_value>Cambodia</target_value>
+      </field>
+      <field>
+        <source_value>Cameroon</source_value>
+        <target_value>Cameroon</target_value>
+      </field>
+      <field>
+        <source_value>Canada</source_value>
+        <target_value>Canada</target_value>
+      </field>
+      <field>
+        <source_value>Cape Verde</source_value>
+        <target_value>Cape Verde</target_value>
+      </field>
+      <field>
+        <source_value>Cayman Islands</source_value>
+        <target_value>Cayman Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Central African Rep</source_value>
+        <target_value>Central African Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Central African Republic</source_value>
+        <target_value>Central African Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Central America</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Chad</source_value>
+        <target_value>Chad</target_value>
+      </field>
+      <field>
+        <source_value>Chile</source_value>
+        <target_value>Chile</target_value>
+      </field>
+      <field>
+        <source_value>China</source_value>
+        <target_value>China</target_value>
+      </field>
+      <field>
+        <source_value>Christmas Island</source_value>
+        <target_value>Christmas Island</target_value>
+      </field>
+      <field>
+        <source_value>Cocos (Keeling) Islands (the)</source_value>
+        <target_value>Cocos (Keeling) Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Colombia</source_value>
+        <target_value>Colombia</target_value>
+      </field>
+      <field>
+        <source_value>Comoros</source_value>
+        <target_value>Comoros</target_value>
+      </field>
+      <field>
+        <source_value>Congo</source_value>
+        <target_value>Congo</target_value>
+      </field>
+      <field>
+        <source_value>Congo {Democratic Rep}</source_value>
+        <target_value>Congo (the Democratic Republic of the)</target_value>
+      </field>
+      <field>
+        <source_value>Congo, Republic of the...</source_value>
+        <target_value>Congo (the Democratic Republic of the)</target_value>
+      </field>
+      <field>
+        <source_value>Cook Islands (the)</source_value>
+        <target_value>Cook Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Costa Rica</source_value>
+        <target_value>Costa Rica</target_value>
+      </field>
+      <field>
+        <source_value>Croatia</source_value>
+        <target_value>Croatia</target_value>
+      </field>
+      <field>
+        <source_value>Cuba</source_value>
+        <target_value>Cuba</target_value>
+      </field>
+      <field>
+        <source_value>Curaçao</source_value>
+        <target_value>Curaçao</target_value>
+      </field>
+      <field>
+        <source_value>Cyprus</source_value>
+        <target_value>Cyprus</target_value>
+      </field>
+      <field>
+        <source_value>Czech Republic</source_value>
+        <target_value>Czech Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Côte d'Ivoire</source_value>
+        <target_value>Côte d'Ivoire</target_value>
+      </field>
+      <field>
+        <source_value>Democratic Republic of the Congo</source_value>
+        <target_value>Congo (the Democratic Republic of the)</target_value>
+      </field>
+      <field>
+        <source_value>Denmark</source_value>
+        <target_value>Denmark</target_value>
+      </field>
+      <field>
+        <source_value>Djibouti</source_value>
+        <target_value>Djibouti</target_value>
+      </field>
+      <field>
+        <source_value>Dominica</source_value>
+        <target_value>Dominica</target_value>
+      </field>
+      <field>
+        <source_value>Dominican Republic</source_value>
+        <target_value>Dominican Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>East Timor</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Ecuador</source_value>
+        <target_value>Ecuador</target_value>
+      </field>
+      <field>
+        <source_value>Egypt</source_value>
+        <target_value>Egypt</target_value>
+      </field>
+      <field>
+        <source_value>El Salvador</source_value>
+        <target_value>El Salvador</target_value>
+      </field>
+      <field>
+        <source_value>Equatorial Guinea</source_value>
+        <target_value>Equatorial Guinea</target_value>
+      </field>
+      <field>
+        <source_value>Eritrea</source_value>
+        <target_value>Eritrea</target_value>
+      </field>
+      <field>
+        <source_value>Estonia</source_value>
+        <target_value>Estonia</target_value>
+      </field>
+      <field>
+        <source_value>Ethiopia</source_value>
+        <target_value>Ethiopia</target_value>
+      </field>
+      <field>
+        <source_value>Falkland Islands (the) [Malvinas]</source_value>
+        <target_value>Falkland Islands (the) [Malvinas]</target_value>
+      </field>
+      <field>
+        <source_value>Faroe Islands (the)</source_value>
+        <target_value>Faroe Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Fiji</source_value>
+        <target_value>Fiji</target_value>
+      </field>
+      <field>
+        <source_value>Finland</source_value>
+        <target_value>Finland</target_value>
+      </field>
+      <field>
+        <source_value>France</source_value>
+        <target_value>France</target_value>
+      </field>
+      <field>
+        <source_value>French Guiana</source_value>
+        <target_value>French Guiana</target_value>
+      </field>
+      <field>
+        <source_value>French Polynesia</source_value>
+        <target_value>French Polynesia</target_value>
+      </field>
+      <field>
+        <source_value>French Southern Territories (the)</source_value>
+        <target_value>French Southern Territories (the)</target_value>
+      </field>
+      <field>
+        <source_value>Gabon</source_value>
+        <target_value>Gabon</target_value>
+      </field>
+      <field>
+        <source_value>Gambia</source_value>
+        <target_value>Gambia (The)</target_value>
+      </field>
+      <field>
+        <source_value>Georgia</source_value>
+        <target_value>Georgia</target_value>
+      </field>
+      <field>
+        <source_value>Germany</source_value>
+        <target_value>Germany</target_value>
+      </field>
+      <field>
+        <source_value>Ghana</source_value>
+        <target_value>Ghana</target_value>
+      </field>
+      <field>
+        <source_value>Gibraltar</source_value>
+        <target_value>Gibraltar</target_value>
+      </field>
+      <field>
+        <source_value>Greece</source_value>
+        <target_value>Greece</target_value>
+      </field>
+      <field>
+        <source_value>Greenland</source_value>
+        <target_value>Greenland</target_value>
+      </field>
+      <field>
+        <source_value>Grenada</source_value>
+        <target_value>Grenada</target_value>
+      </field>
+      <field>
+        <source_value>Guadeloupe</source_value>
+        <target_value>Guadeloupe</target_value>
+      </field>
+      <field>
+        <source_value>Guam</source_value>
+        <target_value>Guam</target_value>
+      </field>
+      <field>
+        <source_value>Guatemala</source_value>
+        <target_value>Guatemala</target_value>
+      </field>
+      <field>
+        <source_value>Guernsey</source_value>
+        <target_value>Guernsey</target_value>
+      </field>
+      <field>
+        <source_value>Guinea</source_value>
+        <target_value>Guinea</target_value>
+      </field>
+      <field>
+        <source_value>Guinea-Bissau</source_value>
+        <target_value>Guinea-Bissau</target_value>
+      </field>
+      <field>
+        <source_value>Guyana</source_value>
+        <target_value>Guyana</target_value>
+      </field>
+      <field>
+        <source_value>Haiti</source_value>
+        <target_value>Haiti</target_value>
+      </field>
+      <field>
+        <source_value>Heard Island and McDonald Islands</source_value>
+        <target_value>Heard Island and McDonald Islands</target_value>
+      </field>
+      <field>
+        <source_value>Holy See (the) [Vatican City State]</source_value>
+        <target_value>Holy See (the) [Vatican City State]</target_value>
+      </field>
+      <field>
+        <source_value>Honduras</source_value>
+        <target_value>Honduras</target_value>
+      </field>
+      <field>
+        <source_value>Hong Kong</source_value>
+        <target_value>Hong Kong</target_value>
+      </field>
+      <field>
+        <source_value>Hong Kong (S.A.R.)</source_value>
+        <target_value>Hong Kong</target_value>
+      </field>
+      <field>
+        <source_value>Hungary</source_value>
+        <target_value>Hungary</target_value>
+      </field>
+      <field>
+        <source_value>I prefer not to say</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Iceland</source_value>
+        <target_value>Iceland</target_value>
+      </field>
+      <field>
+        <source_value>India</source_value>
+        <target_value>India</target_value>
+      </field>
+      <field>
+        <source_value>Indonesia</source_value>
+        <target_value>Indonesia</target_value>
+      </field>
+      <field>
+        <source_value>Iran</source_value>
+        <target_value>Iran (the Islamic Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Iran, Islamic Republic of...</source_value>
+        <target_value>Iran (the Islamic Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Iraq</source_value>
+        <target_value>Iraq</target_value>
+      </field>
+      <field>
+        <source_value>Ireland</source_value>
+        <target_value>Ireland</target_value>
+      </field>
+      <field>
+        <source_value>Ireland {Republic}</source_value>
+        <target_value>Ireland</target_value>
+      </field>
+      <field>
+        <source_value>Isle of Man</source_value>
+        <target_value>Isle of Man</target_value>
+      </field>
+      <field>
+        <source_value>Israel</source_value>
+        <target_value>Israel</target_value>
+      </field>
+      <field>
+        <source_value>Italy</source_value>
+        <target_value>Italy</target_value>
+      </field>
+      <field>
+        <source_value>Ivory Coast</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Jamaica</source_value>
+        <target_value>Jamaica</target_value>
+      </field>
+      <field>
+        <source_value>Japan</source_value>
+        <target_value>Japan</target_value>
+      </field>
+      <field>
+        <source_value>Jersey</source_value>
+        <target_value>Jersey</target_value>
+      </field>
+      <field>
+        <source_value>Jordan</source_value>
+        <target_value>Jordan</target_value>
+      </field>
+      <field>
+        <source_value>Kazakhstan</source_value>
+        <target_value>Kazakhstan</target_value>
+      </field>
+      <field>
+        <source_value>Kenya</source_value>
+        <target_value>Kenya</target_value>
+      </field>
+      <field>
+        <source_value>Kiribati</source_value>
+        <target_value>Kiribati</target_value>
+      </field>
+      <field>
+        <source_value>Korea (the Democratic People's Republic of)</source_value>
+        <target_value>Korea (the Democratic People's Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Korea North</source_value>
+        <target_value>Korea (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Korea South</source_value>
+        <target_value>Korea (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Kosovo</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Kuwait</source_value>
+        <target_value>Kuwait</target_value>
+      </field>
+      <field>
+        <source_value>Kyrgyzstan</source_value>
+        <target_value>Kyrgyzstan</target_value>
+      </field>
+      <field>
+        <source_value>Lao People's Democratic Republic</source_value>
+        <target_value>Lao People's Democratic Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Laos</source_value>
+        <target_value>Lao People's Democratic Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Latvia</source_value>
+        <target_value>Latvia</target_value>
+      </field>
+      <field>
+        <source_value>Lebanon</source_value>
+        <target_value>Lebanon</target_value>
+      </field>
+      <field>
+        <source_value>Lesotho</source_value>
+        <target_value>Lesotho</target_value>
+      </field>
+      <field>
+        <source_value>Liberia</source_value>
+        <target_value>Liberia</target_value>
+      </field>
+      <field>
+        <source_value>Libya</source_value>
+        <target_value>Libya</target_value>
+      </field>
+      <field>
+        <source_value>Libyan Arab Jamahiriya</source_value>
+        <target_value>Libya</target_value>
+      </field>
+      <field>
+        <source_value>Liechtenstein</source_value>
+        <target_value>Liechtenstein</target_value>
+      </field>
+      <field>
+        <source_value>Lithuania</source_value>
+        <target_value>Lithuania</target_value>
+      </field>
+      <field>
+        <source_value>Luxembourg</source_value>
+        <target_value>Luxembourg</target_value>
+      </field>
+      <field>
+        <source_value>Macao</source_value>
+        <target_value>Macao</target_value>
+      </field>
+      <field>
+        <source_value>Macedonia</source_value>
+        <target_value>Macedonia (the former Yugoslav Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Macedonia [FYROM]</source_value>
+        <target_value>Macedonia (the former Yugoslav Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Madagascar</source_value>
+        <target_value>Madagascar</target_value>
+      </field>
+      <field>
+        <source_value>Malawi</source_value>
+        <target_value>Malawi</target_value>
+      </field>
+      <field>
+        <source_value>Malaysia</source_value>
+        <target_value>Malaysia</target_value>
+      </field>
+      <field>
+        <source_value>Maldives</source_value>
+        <target_value>Maldives</target_value>
+      </field>
+      <field>
+        <source_value>Mali</source_value>
+        <target_value>Mali</target_value>
+      </field>
+      <field>
+        <source_value>Malta</source_value>
+        <target_value>Malta</target_value>
+      </field>
+      <field>
+        <source_value>Marshall Islands</source_value>
+        <target_value>Marshall Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Martinique</source_value>
+        <target_value>Martinique</target_value>
+      </field>
+      <field>
+        <source_value>Mauritania</source_value>
+        <target_value>Mauritania</target_value>
+      </field>
+      <field>
+        <source_value>Mauritius</source_value>
+        <target_value>Mauritius</target_value>
+      </field>
+      <field>
+        <source_value>Mayotte</source_value>
+        <target_value>Mayotte</target_value>
+      </field>
+      <field>
+        <source_value>Mexico</source_value>
+        <target_value>Mexico</target_value>
+      </field>
+      <field>
+        <source_value>Micronesia</source_value>
+        <target_value>Micronesia (the Federated States of)</target_value>
+      </field>
+      <field>
+        <source_value>Micronesia, Federated States of...</source_value>
+        <target_value>Micronesia (the Federated States of)</target_value>
+      </field>
+      <field>
+        <source_value>Middle East</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Moldova</source_value>
+        <target_value>Moldova (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Monaco</source_value>
+        <target_value>Monaco</target_value>
+      </field>
+      <field>
+        <source_value>Mongolia</source_value>
+        <target_value>Mongolia</target_value>
+      </field>
+      <field>
+        <source_value>Montenegro</source_value>
+        <target_value>Montenegro</target_value>
+      </field>
+      <field>
+        <source_value>Montserrat</source_value>
+        <target_value>Montserrat</target_value>
+      </field>
+      <field>
+        <source_value>Morocco</source_value>
+        <target_value>Morocco</target_value>
+      </field>
+      <field>
+        <source_value>Mozambique</source_value>
+        <target_value>Mozambique</target_value>
+      </field>
+      <field>
+        <source_value>Myanmar</source_value>
+        <target_value>Myanmar</target_value>
+      </field>
+      <field>
+        <source_value>Myanmar [Burma]</source_value>
+        <target_value>Myanmar</target_value>
+      </field>
+      <field>
+        <source_value>Myanmar, {Burma}</source_value>
+        <target_value>Myanmar</target_value>
+      </field>
+      <field>
+        <source_value>N/A</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Namibia</source_value>
+        <target_value>Namibia</target_value>
+      </field>
+      <field>
+        <source_value>Nauru</source_value>
+        <target_value>Nauru</target_value>
+      </field>
+      <field>
+        <source_value>Nepal</source_value>
+        <target_value>Nepal</target_value>
+      </field>
+      <field>
+        <source_value>Netherlands</source_value>
+        <target_value>Netherlands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Netherlands (the)</source_value>
+        <target_value>Netherlands (the)</target_value>
+      </field>
+      <field>
+        <source_value>New Caledonia</source_value>
+        <target_value>New Caledonia</target_value>
+      </field>
+      <field>
+        <source_value>New Zealand</source_value>
+        <target_value>New Zealand</target_value>
+      </field>
+      <field>
+        <source_value>Nicaragua</source_value>
+        <target_value>Nicaragua</target_value>
+      </field>
+      <field>
+        <source_value>Niger</source_value>
+        <target_value>Niger (the)</target_value>
+      </field>
+      <field>
+        <source_value>Nigeria</source_value>
+        <target_value>Nigeria</target_value>
+      </field>
+      <field>
+        <source_value>Niue</source_value>
+        <target_value>Niue</target_value>
+      </field>
+      <field>
+        <source_value>Nomadic</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Norfolk Island</source_value>
+        <target_value>Norfolk Island</target_value>
+      </field>
+      <field>
+        <source_value>North America (Other)</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>North Korea</source_value>
+        <target_value>Korea (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Northern Mariana Islands</source_value>
+        <target_value>Northern Mariana Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Norway</source_value>
+        <target_value>Norway</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Não Informado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Oman</source_value>
+        <target_value>Oman</target_value>
+      </field>
+      <field>
+        <source_value>Other</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify)</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other Asia</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other Europe</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Pakistan</source_value>
+        <target_value>Pakistan</target_value>
+      </field>
+      <field>
+        <source_value>Palau</source_value>
+        <target_value>Palau</target_value>
+      </field>
+      <field>
+        <source_value>Palestine</source_value>
+        <target_value>Palestine, State of</target_value>
+      </field>
+      <field>
+        <source_value>Panama</source_value>
+        <target_value>Panama</target_value>
+      </field>
+      <field>
+        <source_value>Papua New Guinea</source_value>
+        <target_value>Papua New Guinea</target_value>
+      </field>
+      <field>
+        <source_value>Paraguay</source_value>
+        <target_value>Paraguay</target_value>
+      </field>
+      <field>
+        <source_value>Peru</source_value>
+        <target_value>Peru</target_value>
+      </field>
+      <field>
+        <source_value>Philippines</source_value>
+        <target_value>Philippines (the)</target_value>
+      </field>
+      <field>
+        <source_value>Pitcairn</source_value>
+        <target_value>Pitcairn</target_value>
+      </field>
+      <field>
+        <source_value>Poland</source_value>
+        <target_value>Poland</target_value>
+      </field>
+      <field>
+        <source_value>Portugal</source_value>
+        <target_value>Portugal</target_value>
+      </field>
+      <field>
+        <source_value>Puerto Rico</source_value>
+        <target_value>Puerto Rico</target_value>
+      </field>
+      <field>
+        <source_value>Qatar</source_value>
+        <target_value>Qatar</target_value>
+      </field>
+      <field>
+        <source_value>Republic of Korea</source_value>
+        <target_value>Korea, Republic of</target_value>
+      </field>
+      <field>
+        <source_value>Republic of Moldova</source_value>
+        <target_value>Moldova (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Republic of North Macedonia</source_value>
+        <target_value>Macedonia (the former Yugoslav Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>Romania</source_value>
+        <target_value>Romania</target_value>
+      </field>
+      <field>
+        <source_value>Russia</source_value>
+        <target_value>Russian Federation (the)</target_value>
+      </field>
+      <field>
+        <source_value>Russian Federation</source_value>
+        <target_value>Russian Federation (the)</target_value>
+      </field>
+      <field>
+        <source_value>Rwanda</source_value>
+        <target_value>Rwanda</target_value>
+      </field>
+      <field>
+        <source_value>Réunion</source_value>
+        <target_value>Réunion</target_value>
+      </field>
+      <field>
+        <source_value>Saint Barthélemy</source_value>
+        <target_value>Saint Barthélemy</target_value>
+      </field>
+      <field>
+        <source_value>Saint Helena, Ascension and Tristan da Cunha</source_value>
+        <target_value>Saint Helena, Ascension and Tristan da Cunha</target_value>
+      </field>
+      <field>
+        <source_value>Saint Kitts and Nevis</source_value>
+        <target_value>Saint Kitts and Nevis</target_value>
+      </field>
+      <field>
+        <source_value>Saint Lucia</source_value>
+        <target_value>Saint Lucia</target_value>
+      </field>
+      <field>
+        <source_value>Saint Martin</source_value>
+        <target_value>Saint Martin (French part)</target_value>
+      </field>
+      <field>
+        <source_value>Saint Pierre and Miquelon</source_value>
+        <target_value>Saint Pierre and Miquelon</target_value>
+      </field>
+      <field>
+        <source_value>Saint Vincent and the Grenadines</source_value>
+        <target_value>Saint Vincent and the Grenadines</target_value>
+      </field>
+      <field>
+        <source_value>Samoa</source_value>
+        <target_value>Samoa</target_value>
+      </field>
+      <field>
+        <source_value>San Marino</source_value>
+        <target_value>San Marino</target_value>
+      </field>
+      <field>
+        <source_value>Sao Tome &amp; Principe</source_value>
+        <target_value>Sao Tome and Principe</target_value>
+      </field>
+      <field>
+        <source_value>Sao Tome and Principe</source_value>
+        <target_value>Sao Tome and Principe</target_value>
+      </field>
+      <field>
+        <source_value>Saudi Arabia</source_value>
+        <target_value>Saudi Arabia</target_value>
+      </field>
+      <field>
+        <source_value>Senegal</source_value>
+        <target_value>Senegal</target_value>
+      </field>
+      <field>
+        <source_value>Serbia</source_value>
+        <target_value>Serbia</target_value>
+      </field>
+      <field>
+        <source_value>Seychelles</source_value>
+        <target_value>Seychelles</target_value>
+      </field>
+      <field>
+        <source_value>Sierra Leone</source_value>
+        <target_value>Sierra Leone</target_value>
+      </field>
+      <field>
+        <source_value>Singapore</source_value>
+        <target_value>Singapore</target_value>
+      </field>
+      <field>
+        <source_value>Sint Maarten</source_value>
+        <target_value>Sint Maarten (Dutch part)</target_value>
+      </field>
+      <field>
+        <source_value>Slovak Republic</source_value>
+        <target_value>Slovakia</target_value>
+      </field>
+      <field>
+        <source_value>Slovakia</source_value>
+        <target_value>Slovakia</target_value>
+      </field>
+      <field>
+        <source_value>Slovenia</source_value>
+        <target_value>Slovenia</target_value>
+      </field>
+      <field>
+        <source_value>Solomon Islands</source_value>
+        <target_value>Solomon Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Somalia</source_value>
+        <target_value>Somalia</target_value>
+      </field>
+      <field>
+        <source_value>South Africa</source_value>
+        <target_value>South Africa</target_value>
+      </field>
+      <field>
+        <source_value>South America</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>South Georgia and the South Sandwich Islands</source_value>
+        <target_value>South Georgia and the South Sandwich Islands</target_value>
+      </field>
+      <field>
+        <source_value>South Korea</source_value>
+        <target_value>Korea (the Republic of)</target_value>
+      </field>
+      <field>
+        <source_value>South Sudan</source_value>
+        <target_value>South Sudan</target_value>
+      </field>
+      <field>
+        <source_value>South Sudan</source_value>
+        <target_value>Sudan (the)</target_value>
+      </field>
+      <field>
+        <source_value>Spain</source_value>
+        <target_value>Spain</target_value>
+      </field>
+      <field>
+        <source_value>Sri Lanka</source_value>
+        <target_value>Sri Lanka</target_value>
+      </field>
+      <field>
+        <source_value>St Kitts &amp; Nevis</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Sudan</source_value>
+        <target_value>Sudan (the)</target_value>
+      </field>
+      <field>
+        <source_value>Suriname</source_value>
+        <target_value>Suriname</target_value>
+      </field>
+      <field>
+        <source_value>Svalbard and Jan Mayen</source_value>
+        <target_value>Svalbard and Jan Mayen</target_value>
+      </field>
+      <field>
+        <source_value>Swaziland</source_value>
+        <target_value>Swaziland</target_value>
+      </field>
+      <field>
+        <source_value>Sweden</source_value>
+        <target_value>Sweden</target_value>
+      </field>
+      <field>
+        <source_value>Switzerland</source_value>
+        <target_value>Switzerland</target_value>
+      </field>
+      <field>
+        <source_value>Syria</source_value>
+        <target_value>Syrian Arab Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Syrian</source_value>
+        <target_value>Syrian Arab Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Syrian Arab</source_value>
+        <target_value>Syrian Arab Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Syrian Arab Republic</source_value>
+        <target_value>Syrian Arab Republic (the)</target_value>
+      </field>
+      <field>
+        <source_value>Taiwan</source_value>
+        <target_value>Taiwan (Province of China)</target_value>
+      </field>
+      <field>
+        <source_value>Tajikistan</source_value>
+        <target_value>Tajikistan</target_value>
+      </field>
+      <field>
+        <source_value>Tanzania</source_value>
+        <target_value>Tanzania, United Republic of</target_value>
+      </field>
+      <field>
+        <source_value>Thailand</source_value>
+        <target_value>Thailand</target_value>
+      </field>
+      <field>
+        <source_value>The former Yugoslav Republic of Macedonia</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Timor-Leste</source_value>
+        <target_value>Timor-Leste</target_value>
+      </field>
+      <field>
+        <source_value>Togo</source_value>
+        <target_value>Togo</target_value>
+      </field>
+      <field>
+        <source_value>Tokelau</source_value>
+        <target_value>Tokelau</target_value>
+      </field>
+      <field>
+        <source_value>Tonga</source_value>
+        <target_value>Tonga</target_value>
+      </field>
+      <field>
+        <source_value>Trinidad &amp; Tobago</source_value>
+        <target_value>Trinidad and Tobago</target_value>
+      </field>
+      <field>
+        <source_value>Trinidad and Tobago</source_value>
+        <target_value>Trinidad and Tobago</target_value>
+      </field>
+      <field>
+        <source_value>Tunisia</source_value>
+        <target_value>Tunisia</target_value>
+      </field>
+      <field>
+        <source_value>Turkey</source_value>
+        <target_value>Turkey</target_value>
+      </field>
+      <field>
+        <source_value>Turkmenistan</source_value>
+        <target_value>Turkmenistan</target_value>
+      </field>
+      <field>
+        <source_value>Turks and Caicos Islands</source_value>
+        <target_value>Turks and Caicos Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>Tuvalu</source_value>
+        <target_value>Tuvalu</target_value>
+      </field>
+      <field>
+        <source_value>UK</source_value>
+        <target_value>United Kingdom (the)</target_value>
+      </field>
+      <field>
+        <source_value>USA</source_value>
+        <target_value>United States (the)</target_value>
+      </field>
+      <field>
+        <source_value>Uganda</source_value>
+        <target_value>Uganda</target_value>
+      </field>
+      <field>
+        <source_value>Ukraine</source_value>
+        <target_value>Ukraine</target_value>
+      </field>
+      <field>
+        <source_value>United Arab Emirates</source_value>
+        <target_value>United Arab Emirates (the)</target_value>
+      </field>
+      <field>
+        <source_value>United Kingdom</source_value>
+        <target_value>United Kingdom (the)</target_value>
+      </field>
+      <field>
+        <source_value>United Kingdom</source_value>
+        <target_value>United Kingdom (the)</target_value>
+      </field>
+      <field>
+        <source_value>United Kingdom of Great Britain and Northern Ireland</source_value>
+        <target_value>United Kingdom (the)</target_value>
+      </field>
+      <field>
+        <source_value>United Republic of Tanzania</source_value>
+        <target_value>Tanzania, United Republic of</target_value>
+      </field>
+      <field>
+        <source_value>United States</source_value>
+        <target_value>United States (the)</target_value>
+      </field>
+      <field>
+        <source_value>United States</source_value>
+        <target_value>United States (the)</target_value>
+      </field>
+      <field>
+        <source_value>United States</source_value>
+        <target_value>United States (the)</target_value>
+      </field>
+      <field>
+        <source_value>United States Minor Outlying Islands</source_value>
+        <target_value>United States Minor Outlying Islands (the)</target_value>
+      </field>
+      <field>
+        <source_value>United States of America</source_value>
+        <target_value>United States (the)</target_value>
+      </field>
+      <field>
+        <source_value>Uruguay</source_value>
+        <target_value>Uruguay</target_value>
+      </field>
+      <field>
+        <source_value>Uzbekistan</source_value>
+        <target_value>Uzbekistan</target_value>
+      </field>
+      <field>
+        <source_value>Vanuatu</source_value>
+        <target_value>Vanuatu</target_value>
+      </field>
+      <field>
+        <source_value>Vatican City</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Venezuela</source_value>
+        <target_value>Venezuela, Bolivarian Republic of </target_value>
+      </field>
+      <field>
+        <source_value>Venezuela, Bolivarian Republic of...</source_value>
+        <target_value>Venezuela, Bolivarian Republic of </target_value>
+      </field>
+      <field>
+        <source_value>Viet Nam</source_value>
+        <target_value>Viet Nam</target_value>
+      </field>
+      <field>
+        <source_value>Vietnam</source_value>
+        <target_value>Viet Nam</target_value>
+      </field>
+      <field>
+        <source_value>Virgin Islands (British)</source_value>
+        <target_value>Virgin Islands (British)</target_value>
+      </field>
+      <field>
+        <source_value>Virgin Islands (U.S.)</source_value>
+        <target_value>Virgin Islands (U.S.)</target_value>
+      </field>
+      <field>
+        <source_value>Wallis and Futuna</source_value>
+        <target_value>Wallis and Futuna</target_value>
+      </field>
+      <field>
+        <source_value>Western Sahara*</source_value>
+        <target_value>Western Sahara*</target_value>
+      </field>
+      <field>
+        <source_value>Yemen</source_value>
+        <target_value>Yemen</target_value>
+      </field>
+      <field>
+        <source_value>Zambia</source_value>
+        <target_value>Zambia</target_value>
+      </field>
+      <field>
+        <source_value>Zimbabwe</source_value>
+        <target_value>Zimbabwe</target_value>
+      </field>
+      <field>
+        <source_value>Åland Islands</source_value>
+        <target_value>Åland Islands</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1120</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_salario 5</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>salario_bruto</field_to_use>
+    <target_field>salario_anual</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Less than $20,000</source_value>
+        <target_value>Menor que $20.000</target_value>
+      </field>
+      <field>
+        <source_value>&gt;$140,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$100,000 - $120,000</source_value>
+        <target_value>Entre $100.000 - $120.000</target_value>
+      </field>
+      <field>
+        <source_value>$120,000 - $140,000</source_value>
+        <target_value>Entre $120.000 - $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$20,000 - $40,000</source_value>
+        <target_value>Entre $20.000 - $40.000</target_value>
+      </field>
+      <field>
+        <source_value>$40,000 - $60,000</source_value>
+        <target_value>Entre $40.000 - $60.000</target_value>
+      </field>
+      <field>
+        <source_value>$60,000 - $80,000</source_value>
+        <target_value>Entre $60.000 - $80.000</target_value>
+      </field>
+      <field>
+        <source_value>$80,000 - $100,000</source_value>
+        <target_value>Entre $80.000 - $100.000</target_value>
+      </field>
+      <field>
+        <source_value>Student / Unemployed</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Não Coleetado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>$140,000 - $160,000</source_value>
+        <target_value>Entre $140.000 - $160.000</target_value>
+      </field>
+      <field>
+        <source_value>Rather not say</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>More than $160,000</source_value>
+        <target_value>Mais de $160.000</target_value>
+      </field>
+      <field>
+        <source_value>Unemployed</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>$10,000 - $20,000</source_value>
+        <target_value>Menor que $20.000</target_value>
+      </field>
+      <field>
+        <source_value>$20,000 - $30,000</source_value>
+        <target_value>Entre $20.000 - $40.000</target_value>
+      </field>
+      <field>
+        <source_value>$30,000 - $40,000</source_value>
+        <target_value>Entre $20.000 - $40.000</target_value>
+      </field>
+      <field>
+        <source_value>$40,000 - $50,000</source_value>
+        <target_value>Entre $40.000 - $60.000</target_value>
+      </field>
+      <field>
+        <source_value>$50,000 - $60,000</source_value>
+        <target_value>Entre $40.000 - $60.000</target_value>
+      </field>
+      <field>
+        <source_value>$60,000 - $70,000</source_value>
+        <target_value>Entre $60.000 - $80.000</target_value>
+      </field>
+      <field>
+        <source_value>$70,000 - $80,000</source_value>
+        <target_value>Entre $60.000 - $80.000</target_value>
+      </field>
+      <field>
+        <source_value>$80,000 - $90,000</source_value>
+        <target_value>Entre $80.000 - $100.000</target_value>
+      </field>
+      <field>
+        <source_value>$90,000 - $100,000</source_value>
+        <target_value>Entre $80.000 - $100.000</target_value>
+      </field>
+      <field>
+        <source_value>$100,000 - $110,000</source_value>
+        <target_value>Entre $100.000 - $120.000</target_value>
+      </field>
+      <field>
+        <source_value>$110,000 - $120,000</source_value>
+        <target_value>Entre $100.000 - $120.000</target_value>
+      </field>
+      <field>
+        <source_value>$120,000 - $130,000</source_value>
+        <target_value>Entre $120.000 - $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$130,000 - $140,000</source_value>
+        <target_value>Entre $120.000 - $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$140,000 - $150,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$150,000 - $160,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$160,000 - $170,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$170,000 - $180,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$180,000 - $190,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>$190,000 - $200,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>Less than $10,000</source_value>
+        <target_value>Menor que $20.000</target_value>
+      </field>
+      <field>
+        <source_value>More than $200,000</source_value>
+        <target_value>Maior que $140.000</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify)</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1584</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_tipodev</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>tipo_bruto</field_to_use>
+    <target_field>descricao_tipodev</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>AI/ML engineer</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Academic researcher</source_value>
+        <target_value>Pesquisador Acadêmico / Educador</target_value>
+      </field>
+      <field>
+        <source_value>Analyst</source_value>
+        <target_value>Analista de Dados / Negócios</target_value>
+      </field>
+      <field>
+        <source_value>Applied scientist</source_value>
+        <target_value>Cientista / Pesquisador</target_value>
+      </field>
+      <field>
+        <source_value>Back-End Web Developer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Back-end Developer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Back-end developer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Back-end web developer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Blockchain</source_value>
+        <target_value>Desenvolvedor Blockchain</target_value>
+      </field>
+      <field>
+        <source_value>Business intelligence or data warehousing expert</source_value>
+        <target_value>Especialista em BI / DW</target_value>
+      </field>
+      <field>
+        <source_value>C-suite executive (CEO, CTO, etc.)</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Cloud infrastructure engineer</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Cybersecurity or InfoSec professional</source_value>
+        <target_value>Profissional de Segurança</target_value>
+      </field>
+      <field>
+        <source_value>Data engineer</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Data or business analyst</source_value>
+        <target_value>Analista de Dados / Negócios</target_value>
+      </field>
+      <field>
+        <source_value>Data scientist</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Data scientist or machine learning specialist</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Database Administrator</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Database administrator</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Designer</source_value>
+        <target_value>Designer / UX / UI</target_value>
+      </field>
+      <field>
+        <source_value>Desktop Application Developer</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>Desktop Software Developer</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>Desktop applications developer</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>Desktop developer</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>Desktop or enterprise applications developer</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>DevOps</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>DevOps specialist</source_value>
+        <target_value>Developer Advocate</target_value>
+      </field>
+      <field>
+        <source_value>DevType</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Developer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Developer Advocate</source_value>
+        <target_value>Developer Advocate</target_value>
+      </field>
+      <field>
+        <source_value>Developer Experience</source_value>
+        <target_value>Developer Advocate</target_value>
+      </field>
+      <field>
+        <source_value>Developer with a statistics or mathematics background</source_value>
+        <target_value>Estatístico / Matemático</target_value>
+      </field>
+      <field>
+        <source_value>Developer, AI</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Developer, AI apps or physical AI</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Developer, QA or test</source_value>
+        <target_value>Engenheiro de QA / Testes</target_value>
+      </field>
+      <field>
+        <source_value>Developer, back-end</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Developer, desktop or enterprise applications</source_value>
+        <target_value>Desenvolvedor Desktop</target_value>
+      </field>
+      <field>
+        <source_value>Developer, embedded applications or devices</source_value>
+        <target_value>Desenvolvedor Embarcados</target_value>
+      </field>
+      <field>
+        <source_value>Developer, front-end</source_value>
+        <target_value>Desenvolvedor Front-end</target_value>
+      </field>
+      <field>
+        <source_value>Developer, full-stack</source_value>
+        <target_value>Desenvolvedor Full-stack</target_value>
+      </field>
+      <field>
+        <source_value>Developer, full-stack</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Developer, game or graphics</source_value>
+        <target_value>Desenvolvedor de Jogos / Gráficos</target_value>
+      </field>
+      <field>
+        <source_value>Developer, mobile</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Educator</source_value>
+        <target_value>Pesquisador Acadêmico / Educador</target_value>
+      </field>
+      <field>
+        <source_value>Educator or academic researcher</source_value>
+        <target_value>Pesquisador Acadêmico / Educador</target_value>
+      </field>
+      <field>
+        <source_value>Embedded Application Developer</source_value>
+        <target_value>Desenvolvedor Embarcados</target_value>
+      </field>
+      <field>
+        <source_value>Embedded applications or devices developer</source_value>
+        <target_value>Desenvolvedor Embarcados</target_value>
+      </field>
+      <field>
+        <source_value>Embedded applications/devices developer</source_value>
+        <target_value>Desenvolvedor Embarcados</target_value>
+      </field>
+      <field>
+        <source_value>Engineer</source_value>
+        <target_value>Gerente de Engenharia</target_value>
+      </field>
+      <field>
+        <source_value>Engineer, data</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Engineer, site reliability</source_value>
+        <target_value>Desenvolvedor Web</target_value>
+      </field>
+      <field>
+        <source_value>Engineering manager</source_value>
+        <target_value>Gerente de Engenharia</target_value>
+      </field>
+      <field>
+        <source_value>Enterprise Level Services</source_value>
+        <target_value>Desenvolvedor de Serviços Corporativos</target_value>
+      </field>
+      <field>
+        <source_value>Enterprise level services developer</source_value>
+        <target_value>Desenvolvedor de Serviços Corporativos</target_value>
+      </field>
+      <field>
+        <source_value>Executive (VP of Eng, CTO, CIO, etc.)</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Founder, technology or otherwise</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Front-End Web Developer</source_value>
+        <target_value>Desenvolvedor Front-end</target_value>
+      </field>
+      <field>
+        <source_value>Front-end developer</source_value>
+        <target_value>Desenvolvedor Front-end</target_value>
+      </field>
+      <field>
+        <source_value>Full-Stack Web Developer</source_value>
+        <target_value>Desenvolvedor Full-stack</target_value>
+      </field>
+      <field>
+        <source_value>Full-stack developer</source_value>
+        <target_value>Desenvolvedor Full-stack</target_value>
+      </field>
+      <field>
+        <source_value>Full-stack web developer</source_value>
+        <target_value>Desenvolvedor Full-stack</target_value>
+      </field>
+      <field>
+        <source_value>Game or graphics developer</source_value>
+        <target_value>Desenvolvedor de Jogos / Gráficos</target_value>
+      </field>
+      <field>
+        <source_value>Graphic designer</source_value>
+        <target_value>Designer / UX / UI</target_value>
+      </field>
+      <field>
+        <source_value>Graphics programmer</source_value>
+        <target_value>Desenvolvedor de Jogos / Gráficos</target_value>
+      </field>
+      <field>
+        <source_value>Graphics programming</source_value>
+        <target_value>Desenvolvedor de Jogos / Gráficos</target_value>
+      </field>
+      <field>
+        <source_value>Growth hacker</source_value>
+        <target_value>Marketing / Vendas</target_value>
+      </field>
+      <field>
+        <source_value>Hardware Engineer</source_value>
+        <target_value>Engenheiro de Hardware</target_value>
+      </field>
+      <field>
+        <source_value>I don't work in tech</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>IT Manager</source_value>
+        <target_value>Gerente de TI</target_value>
+      </field>
+      <field>
+        <source_value>IT Staff / System Administrator</source_value>
+        <target_value>Administrador de Sistemas</target_value>
+      </field>
+      <field>
+        <source_value>Kernel / Driver Developer</source_value>
+        <target_value>Desenvolvedor de Sistemas / Baixo Nível</target_value>
+      </field>
+      <field>
+        <source_value>Machine learning developer</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Machine learning specialist</source_value>
+        <target_value>Cientista de Dados / IA</target_value>
+      </field>
+      <field>
+        <source_value>Manager of Developers or Team Leader</source_value>
+        <target_value>Gerente de Engenharia</target_value>
+      </field>
+      <field>
+        <source_value>Marketing or sales professional</source_value>
+        <target_value>Marketing / Vendas</target_value>
+      </field>
+      <field>
+        <source_value>Mobile Application Developer</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Mobile developer</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Mobile developer - Android</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Mobile developer - Windows Phone</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>Mobile developer - iOS</source_value>
+        <target_value>Desenvolvedor Mobile</target_value>
+      </field>
+      <field>
+        <source_value>NA</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify):</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Product manager</source_value>
+        <target_value>Gerente de Produto / Projeto</target_value>
+      </field>
+      <field>
+        <source_value>Project manager</source_value>
+        <target_value>Gerente de Produto / Projeto</target_value>
+      </field>
+      <field>
+        <source_value>QA or test developer</source_value>
+        <target_value>Engenheiro de QA / Testes</target_value>
+      </field>
+      <field>
+        <source_value>Quality Assurance</source_value>
+        <target_value>Engenheiro de QA / Testes</target_value>
+      </field>
+      <field>
+        <source_value>Quality assurance engineer</source_value>
+        <target_value>Engenheiro de QA / Testes</target_value>
+      </field>
+      <field>
+        <source_value>Retired</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Scientist</source_value>
+        <target_value>Cientista / Pesquisador</target_value>
+      </field>
+      <field>
+        <source_value>Security professional</source_value>
+        <target_value>Profissional de Segurança</target_value>
+      </field>
+      <field>
+        <source_value>Senior Executive (C-Suite, VP, etc.)</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Senior executive/VP</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Senior, executive/VP</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Server Programmer</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Student</source_value>
+        <target_value>Estudante</target_value>
+      </field>
+      <field>
+        <source_value>Support engineer or analyst</source_value>
+        <target_value>Suporte Técnico</target_value>
+      </field>
+      <field>
+        <source_value>System administrator</source_value>
+        <target_value>Administrador de Sistemas</target_value>
+      </field>
+      <field>
+        <source_value>Systems Analyst</source_value>
+        <target_value>Analista de Sistemas</target_value>
+      </field>
+      <field>
+        <source_value>UX, Research Ops or UI design professional</source_value>
+        <target_value>Designer / UX / UI</target_value>
+      </field>
+      <field>
+        <source_value>Web Application Developer</source_value>
+        <target_value>Desenvolvedor Web</target_value>
+      </field>
+      <field>
+        <source_value>Web developer</source_value>
+        <target_value>Desenvolvedor Web</target_value>
+      </field>
+      <field>
+        <source_value>nan</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>other</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Senior Executive (C-Suite</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Research &amp; Development role</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Architect</source_value>
+        <target_value>Analista de Sistemas</target_value>
+      </field>
+      <field>
+        <source_value>Financial analyst or engineer</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Senior executive (C-suite</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Founder</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>DevOps engineer or professional</source_value>
+        <target_value>Desenvolvedor Back-end</target_value>
+      </field>
+      <field>
+        <source_value>Database administrator or engineer</source_value>
+        <target_value>Engenheiro de Dados</target_value>
+      </field>
+      <field>
+        <source_value>Front-end web developer</source_value>
+        <target_value>Desenvolvedor Front-end</target_value>
+      </field>
+      <field>
+        <source_value>Executive (VP of Eng., CTO, CIO, etc.)</source_value>
+        <target_value>Executivo (C-Level / VP)</target_value>
+      </field>
+      <field>
+        <source_value>Embedded application developer</source_value>
+        <target_value>Desenvolvedor Embarcados</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1264</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ambiente</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Write to log 2 2</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>sk_ambientetrabalho</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>634</xloc>
+      <yloc>953</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Write to log 2 2</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>status_emprego</name>
+      </field>
+      <field>
+        <name>tamanho_empresa</name>
+      </field>
+      <field>
+        <name>modalidade_trabalho</name>
+      </field>
+      <field>
+        <name>satisfacao_trabalho</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>682</xloc>
+      <yloc>1049</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_modalidade 6</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>modalidade_bruto</field_to_use>
+    <target_field>modalidade_trabalho</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Full-time remote</source_value>
+        <target_value>Remoto</target_value>
+      </field>
+      <field>
+        <source_value>I rarely work remotely</source_value>
+        <target_value>Híbrido ocasionalmente</target_value>
+      </field>
+      <field>
+        <source_value>Never</source_value>
+        <target_value>Presencial</target_value>
+      </field>
+      <field>
+        <source_value>Part-time remote</source_value>
+        <target_value>Híbrido</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1088</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_satisfacao 6</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>satisfacao_bruto</field_to_use>
+    <target_field>satisfacao_trabalho</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>I'm somewhat dissatisfied with my job</source_value>
+        <target_value>Insatisfeito</target_value>
+      </field>
+      <field>
+        <source_value>I hate my job</source_value>
+        <target_value>Muito Insatisfeito</target_value>
+      </field>
+      <field>
+        <source_value>I love my job</source_value>
+        <target_value>Muito Satisfeito</target_value>
+      </field>
+      <field>
+        <source_value>I'm neither satisfied nor dissatisfied with my job</source_value>
+        <target_value>Neutro</target_value>
+      </field>
+      <field>
+        <source_value>I'm neither satisfied nor dissatisfied</source_value>
+        <target_value>Neutro</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify)</source_value>
+        <target_value>Não se aplica</target_value>
+      </field>
+      <field>
+        <source_value>I don't have a job</source_value>
+        <target_value>Não se aplica</target_value>
+      </field>
+      <field>
+        <source_value>I'm somewhat satisfied with my job</source_value>
+        <target_value>Satisfeito</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_status 6</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>status_bruto</field_to_use>
+    <target_field>status_emprego</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Employed full-time</source_value>
+        <target_value>Empregado Integral</target_value>
+      </field>
+      <field>
+        <source_value>Employed part-time</source_value>
+        <target_value>Empregado Parcial</target_value>
+      </field>
+      <field>
+        <source_value>Freelance / Contractor</source_value>
+        <target_value>Freelancer</target_value>
+      </field>
+      <field>
+        <source_value>Self-employed</source_value>
+        <target_value>Freelancer</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>I'm a student</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify)</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>Prefer not to disclose</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>Retired</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>Unemployed</source_value>
+        <target_value>Outros</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mapper_tamanho 6</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>tamanho_bruto</field_to_use>
+    <target_field>tamanho_empresa</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1,000-4,999 employees</source_value>
+        <target_value>Grande Empresa</target_value>
+      </field>
+      <field>
+        <source_value>10,000+ employees</source_value>
+        <target_value>Grande Empresa</target_value>
+      </field>
+      <field>
+        <source_value>5,000-9,999 employees</source_value>
+        <target_value>Grande Empresa</target_value>
+      </field>
+      <field>
+        <source_value>500-999 employees</source_value>
+        <target_value>Grande Empresa</target_value>
+      </field>
+      <field>
+        <source_value>100-499 employees</source_value>
+        <target_value>Média Empresa</target_value>
+      </field>
+      <field>
+        <source_value>20-99 employees</source_value>
+        <target_value>Média Empresa</target_value>
+      </field>
+      <field>
+        <source_value>Não Coletado</source_value>
+        <target_value>Não Coletado</target_value>
+      </field>
+      <field>
+        <source_value>I am not part of a company</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>I am not sure</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>Other (please specify)</source_value>
+        <target_value>Outros</target_value>
+      </field>
+      <field>
+        <source_value>1-4 employees</source_value>
+        <target_value>Pequena Empresa</target_value>
+      </field>
+      <field>
+        <source_value>10-19 employees</source_value>
+        <target_value>Pequena Empresa</target_value>
+      </field>
+      <field>
+        <source_value>5-9 employees</source_value>
+        <target_value>Pequena Empresa</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>912</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
